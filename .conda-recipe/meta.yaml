@@ -12,6 +12,15 @@ package:
   version: {{ GIT_DESCRIBE_TAG[1:] }}.0
 {% endif %}
 
+requirements:
+  build:
+    - arduino-aligned-alloc
+    - arduino-linked-list >=1.2.3
+
+  run:
+    - arduino-aligned-alloc
+    - arduino-linked-list >=1.2.3
+
 
 build:
   # If this is a new build for the same version, increment the build
